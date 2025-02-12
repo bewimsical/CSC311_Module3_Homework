@@ -1,0 +1,9 @@
+.root{
+    -fx-padding: 10px;
+}
+.error.text-field{
+    -fx-border-color: #F00;
+}
+.label{
+    -fx-padding: 9px;
+}
