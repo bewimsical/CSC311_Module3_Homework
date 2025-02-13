@@ -27,7 +27,7 @@ public class GUIController {
      */
     private double convert(TextField value){
         try{
-            parseError = false;
+
             value.getStyleClass().remove("error");
             return Double.parseDouble(value.getText());
         }catch (NumberFormatException e){
@@ -42,6 +42,7 @@ public class GUIController {
      */
     @FXML
     protected void onCalcButtonClick() {
+        parseError = false;
         double interestRate = convert(interestRateIn) / 100;
         double years = convert(yearsIn);
         double loanAmount = convert(loanAmountIn);
